@@ -1,0 +1,9 @@
+applications:
+ - name: currency-exchange-rah
+   #host: netflix-eureka-naming-server
+   path: target/currency-exchange-service-0.0.1-SNAPSHOT.jar
+   memory: 1G
+   instances: 1
+   buildpack: java_buildpack
+   env:
+    CF_TARGET: api.run.pivotal.io
